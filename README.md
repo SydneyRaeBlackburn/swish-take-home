@@ -16,7 +16,6 @@ Houses all the necessary files, configuration, and dependencies needed to run `P
 |  MEDIUM  |  1159  |
 |  LOW     |   47   |
 
-
 ## Local Build
 ```bash
 $ docker build -t swish .
