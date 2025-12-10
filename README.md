@@ -1,6 +1,8 @@
 # Swish Take Home
 Houses all the necessary files, configuration, and dependencies needed to run `Python2`, `Python3`, and `R` in a single container. The image is automatically built and pushed to Dockerhub on main branch pushes.
 
+[Link to image on Dockerhub](https://hub.docker.com/r/sblackburn10/sblackburn/tags)
+
 ## Image Details
 **Image Name:** `sblackburn10/sblackburn:swish`
 
@@ -16,14 +18,14 @@ Houses all the necessary files, configuration, and dependencies needed to run `P
 |  MEDIUM  |  1159  |
 |  LOW     |   47   |
 
+## Kubernetes Deployment
+- Pull image from Dockerhub: `docker pull sblackburn10/sblackburn:swish`
+- Apply: `kubectl apply -f deployment.yaml`
+
 ## Local Build
 ```bash
 $ docker build -t swish .
 ```
-
-## Kubernetes Deployment
-- Pull image from Dockerhub: `docker pull sblackburn10/sblackburn:swish`
-- Apply: `kubectl apply -f deployment.yaml`
 
 ## Local Run
 Run `Python2.7`, `Python3.13`, or `Rscript` in an iteractive shell:
