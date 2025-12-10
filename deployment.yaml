@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swish
+  labels:
+    app: swish
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: swish
+  template:
+    metadata:
+      labels:
+        app: swish
+    spec:
+      containers:
+        - name: swish
+          image: sblackburn10/sblackburn:swish
+          command:
+            - /bin/bash
+            - -c
+            - sleep infinity

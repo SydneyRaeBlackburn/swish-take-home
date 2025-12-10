@@ -1,0 +1,12 @@
+# Ignore Git-related files
+.git
+.gitignore
+.github/
+
+# Ignore Docker-related files that are not needed in the image
+Dockerfile
+.dockerignore
+
+# Misc files/directories
+README.md
+deployment.yaml
